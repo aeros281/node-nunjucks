@@ -1,0 +1,15 @@
+{
+  "name": "{{ cookiecutter.project_slug }}",
+  "version": "0.1.0",
+  "description": "{{ cookiecutter.description }}",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "{{ cookiecutter.author_name }}",
+  "license": "MIT",
+  "dependencies": {
+    "nunjucks": "^3.2.3"
+  }
+}
+
