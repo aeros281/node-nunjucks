@@ -1,5 +1,6 @@
 const nunjucks = require('nunjucks');
 const fs = require('fs');
+const data = require('./data');
 
 // Configure Nunjucks
 nunjucks.configure('templates', {
@@ -7,7 +8,7 @@ nunjucks.configure('templates', {
 });
 
 // Render the template
-const renderedContent = nunjucks.render('template.html', { title: 'Hello, World!' });
+const renderedContent = nunjucks.render('template.html', data);
 
 // Write the rendered content to output.txt
 fs.writeFileSync('output.txt', renderedContent);
