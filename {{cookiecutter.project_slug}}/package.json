@@ -4,12 +4,16 @@
   "description": "{{ cookiecutter.description }}",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "format": "prettier --write ."
   },
   "author": "{{ cookiecutter.author_name }}",
   "license": "MIT",
   "dependencies": {
     "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
   }
 }
 
